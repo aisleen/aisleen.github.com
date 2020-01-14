@@ -1,0 +1,60 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+header, #content, footer{
+  width: 80vw;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 2em;
+}
+
+#content{
+  display:grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+  margin: auto;
+}
+
+#first, #second, #third {
+  padding: 2em;
+  background-color: pink;
+  margin-right: 1em;
+}
+
+div{
+  width: 2em;
+}
+
+/*---------- Typography ----------*/
+h1{
+  font-weight: bold;
+  font-size: 20em;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  line-height: 1.5em;
+
+}
+
+a:hover{
+  color: grey;
+}
+
+footer{
+  text-align: center;
+}
+
+/*---------- Responsive Design ----------*/
+@media(min-width:1200px){
+  #content{
+    width: 1200px;
+  }
+}
+
+@media(min-width:800px){
+  #content{
+    width: 800px;
+  }
+}
