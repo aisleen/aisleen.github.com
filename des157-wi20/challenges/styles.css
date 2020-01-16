@@ -1,0 +1,93 @@
+body {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background-color: #F3F2ED;
+}
+
+header {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background-image: linear-gradient(#D8A296, white);
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #56585B;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+h1 {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    color: #262626;
+    font-size: 3em;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    color: #A5757F;
+    font-size: 1.5em;
+    line-height: 1.3em;
+}
+
+img {
+    max-width:100%;
+    height: auto;
+  }
+
+footer {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-image: linear-gradient(#D8A296, #A5757F);
+}
+
+#navigation {
+    list-style-type: none;
+    background-color: #A5757F;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #F3F2ED;
+    font-size: 1em;
+    display: block;
+    text-decoration: none;
+    line-height: 4em;
+    text-align: center;
+}
+
+ul a:hover {
+    background-color: #D8A296;
+    color: white;
+  }
+
+.boba {
+  color: white;
+  background-image: url("images/boba.jpg");
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2em;
+}
+
+.firsttext, .secondtext {
+  color: white;
+}
+
+.box{
+  padding-bottom: 2em;
+}
