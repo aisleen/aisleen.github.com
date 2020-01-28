@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function Experiment</title>
+</head>
+<body>
+
+    <h1>Function Experiment</h1>
+    <script>
+
+    var userPrompt = prompt("What is your dog's name?","");
+    var activities = [`walk`,`run`, `sleep`];
+
+    function hello(dogname){
+
+        var welcome;
+
+        if (dogname == null || dogname == ""){
+            welcome = `Did you forget your dogs name?`;
+        }
+
+        else{
+            welcome = `Hello! Let's find an activity for ${dogname} today.`;
+        }
+
+        return welcome;
+    }
+
+    function randomInt( min, max){
+        return Math.floor( (max - min + 1) * Math.random() ) + min;
+    }
+
+    function wellness(dogname,act){
+        console.log(hello(dogname));
+        var randomActivity = act[randomInt(0, act.length-1)];
+        console.log(`Today, ${dogname} needs a ${randomActivity}.`);
+
+    }
+
+    wellness(userPrompt,activities);
+
+    var myDogsAge = prompt("How old is your dog?", "");
+
+    if( parseInt(myDogsAge) ){
+      console.log("You entered the correct year.");
+    }
+    else{ console.log("Are you sure?"); }
+
+    </script>
+
+
+</body>
+</html>
