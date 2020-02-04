@@ -45,7 +45,7 @@
 					var myNum = parseInt(document.querySelector('input').value);
 
 					if(myNum){
-						var convertNum = myNum/0.62137;
+						var convertNum = Number((myNum/0.62137).toFixed(3));
 						document.getElementById("answer").innerHTML= `${myNum} miles converts to ${convertNum} kilometers`;
 					}
 					else{
