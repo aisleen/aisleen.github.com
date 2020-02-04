@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Distance Converter</title>
+
+	<!--/ /-------- Normalize CSS --------/ /-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+	<!--/ /-------- Google Fonts --------/ /-->
+	<link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans&display=swap" rel="stylesheet">
+
+	<!--/ /-------- My Styles --------/ /-->
+	<link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<h1 id="title">Miles to Kilometers Converter</h1>
+
+	<div class="container top">
+		<p id=des>Type in a number of miles and click the button to convert the distance to kilometers.</p>
+
+		<form method="post" action="somephpfile.php" id="convert">
+
+			<input type="text" name="distance" id="distance" placeholder="distance">
+			<input type="submit" name="convertdist" value="Convert Distance">
+
+		</form>
+	</div>
+	<div class="container bottom" id="answer">
+		<h2 class="invisible">Answer goes here</h2>
+	</div>
+
+	<p id="directions">Press the "K" key to switch to kilometer converstion, press the "M" key to switch to mile conversion</p>
+
+	<script>
+		var formt = document.querySelector('form');
+
+
+		formt.addEventListener('submit', function(event) {
+
+			event.preventDefault();
+			var myNum = parseInt(document.querySelector('input').value);
+
+			if (myNum) {
+				var convertNum = Number((myNum / 0.62137).toFixed(3));
+				document.getElementById("answer").innerHTML = `${myNum} miles converts to ${convertNum} kilometers`;
+			} else {
+				alert('please enter a number');
+			}
+		});
+
+
+
+
+		formt.addEventListener('keydown', function(event) {
+
+			var keyPressed = event.which;
+
+			var myNum = parseInt(document.querySelector('input').value);
+
+			switch (keyPressed) {
+				case 75:
+					var convertNum = Number((myNum / 0.62137).toFixed(3));
+					document.getElementById("answer").innerHTML = `${myNum} miles converts to ${convertNum} kilometers`;
+					document.getElementById("title").innerHTML = `Miles to Kilometers Converter`;
+					document.getElementById("des").innerHTML = `Type in a number of miles and click the button to convert the distance to kilometers.`;
+					break;
+
+				case 77:
+					var convertNum = Number((myNum * 0.62137).toFixed(3));
+					document.getElementById("answer").innerHTML = `${myNum} kilometers converts to ${convertNum} miles`;
+					document.getElementById("title").innerHTML = `Kilometers to Miles Converter`;
+					document.getElementById("des").innerHTML = `Type in a number of kilometers and click the button to convert the distance to miles.`;
+					break;
+
+				default:
+					var convertNum = Number((myNum / 0.62137).toFixed(3));
+					document.getElementById("answer").innerHTML = `${myNum} miles converts to ${convertNum} kilometers`;
+					document.getElementById("title").innerHTML = `Miles to Kilometers Converter`;
+					document.getElementById("des").innerHTML = `Type in a number of miles and click the button to convert the distance to kilometers.`;
+					break;
+
+			}
+
+		});
+	</script>
+
+</body>
+
+</html>
