@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:700|Roboto:400,500&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <title>Hinge Libs</title>
+</head>
+
+<body>
+
+
+  <div>
+    <section id="inputs">
+      <form id="myform">
+
+        <h1>Welcome to<br>Hinge Libs.</h1>
+        <label class="label" for="name"> What's your name?</label>
+        <input type="text" id="name">
+        <label class="label" for="activity"> What's your favorite activity?</label>
+        <input type="text" id="activity">
+        <label class="label" for="place"> Where do you like to go?</label>
+        <input type="text" id="place">
+        <label class="label" for="topic"> What are you passionate about?</label>
+        <input type="text" id="topic">
+        <label class="label" for="animal"> What's your favorite animal?</label>
+        <input type="text" id="animal">
+        <label class="label" for="mascot"> What's your school's mascot?</label>
+        <input type="text" id="mascot">
+
+
+        <input class="button" type="submit" value="Create my profile">
+
+      </form>
+    </section>
+
+
+    <section id="image" class="section1">
+      <h2 id=changename>Name</h2>
+
+      <div style="position: relative;">
+        <img class="picture" style="position: relative; width:400px;" src="profile.svg" alt="profile" />
+        <img class="phone" style="position: absolute; top: -150px; left: -152px; width:700px;" src="phone.png" alt="phone" />
+        <img class="heart" style="position: absolute; top: -100px; left: -152px; width:700px;" src="profileheart.svg" alt="heart" />
+      </div>
+
+      <div class="answerbox">
+        <h3>I'm looking for</h3>
+        <div class="invisible" id="madlib">
+          <p>Madlib will go here!</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="spacer"></div>
+
+
+  <script src="script.js"></script>
+</body>
+
+
+<footer>
+  <div class="footertext">
+    <a>This project is inspired by the dating app, Hinge.</a><br>
+    <a href="https://validator.w3.org/check?uri=referer" style="text-decoration:none;">Valid HTML</a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" style="text-decoration:none;">Valid CSS</a>
+  </div>
+</footer>
+
+
+</html>
