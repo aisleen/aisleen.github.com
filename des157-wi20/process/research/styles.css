@@ -8,13 +8,12 @@ main {
     padding-right: 10%;
     padding-top: 5em;
     padding-bottom: 5em;
-    background-color: #F3F2ED;
 }
 
 header {
     padding-top: 5em;
     padding-bottom: 5em;
-    background-image: linear-gradient(#D8A296, white);
+    background-color: #F3F2ED;
 }
 
 p {
@@ -26,9 +25,9 @@ p {
 }
 
 h1 {
-    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    color: #262626;
+    color: #FFFFFF;
     font-size: 3em;
     line-height: 1.3em;
     text-align: center;
@@ -37,7 +36,7 @@ h1 {
 h2 {
     font-family: 'PT Serif', serif;
     font-weight: 700;
-    color: #A5757F;
+    color: #ffbaca;
     font-size: 1.5em;
     line-height: 1.3em;
 }
@@ -51,7 +50,6 @@ footer {
     text-align: center;
     padding-top: 2em;
     padding-bottom: 2em;
-    background-image: linear-gradient(#D8A296, #A5757F);
 }
 
 #navigation {
