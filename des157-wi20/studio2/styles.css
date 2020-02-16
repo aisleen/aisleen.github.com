@@ -1,0 +1,137 @@
+/* ---------- layout ----------*/
+body {
+  background-color: #F5E3E6;
+}
+
+#items, #itemsoverlay {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 100%;
+  padding: 2%;
+}
+
+#phone, #planner, #laptop, #planneroverlay, #laptopoverlay, #phoneoverlay {
+  display: flex;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.content1, .content2, .content3 {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 70px;
+}
+
+#closephone, #closeplanner, #closelaptop {
+  position: absolute;
+  top: 20%;
+  right: 42%;
+}
+
+#closephone:hover, #closelaptop:hover, #closeplanner:hover {
+  cursor: pointer;
+}
+
+.footertext {
+  clear: both;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  margin-top: 600px;
+  background-color: #F5E3E6;
+  text-align: center;
+}
+
+/* ---------- styling ----------*/
+#planner img, #laptop img, #phone img {
+  border-radius: 50%;
+  background-color: white;
+}
+
+#planneroverlay, #laptopoverlay, #phoneoverlay {
+  background-color: black;
+  opacity: 0.9;
+  color: white;
+  text-align: center;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+}
+
+/* ---------- hover ----------*/
+#items section img:hover {
+  transform: scale(1.1);
+}
+
+/* ---------- typography ----------*/
+h1 {
+  font-size: 80px;
+  font-family: 'Lora', serif;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h2, h3, .footertext {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-family: 'Lora', serif;
+  font-size: 20px;
+}
+
+.footertext a {
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* ---------- layout ----------*/
+  h1 {
+    padding-top: 60px;
+    font-size: 60px;
+  }
+
+  #items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #items img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 300px;
+  }
+
+  .footertext {
+    margin-top: 1100px;
+  }
+
+  #planneroverlay {
+    margin-top: 310px;
+  }
+
+  #laptopoverlay {
+    margin-top: 620px;
+  }
+
+  #closeplanner {
+    top: 55%;
+  }
+
+  #closelaptop {
+    top: 67%;
+  }
+}
