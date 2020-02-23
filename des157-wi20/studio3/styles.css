@@ -1,0 +1,103 @@
+
+
+/*------- layout --------*/
+
+#startgame, #roll, #rollagain, #pass {
+  text-align: center;
+}
+
+.footertext {
+  clear: both;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  margin-top: 200px;
+  background-color: #E2F0FA;
+  text-align: center;
+}
+
+
+/*------- styles --------*/
+body{
+  background-color: #E2F0FA;
+  margin: 50px;
+}
+
+header{
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+#startgame, #roll, #rollagain, #pass {
+  border-radius: 40px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 300px;
+  background-color: #88C2EB;
+  color: #FFFFFF;
+}
+
+#quit{
+  border-radius: 40px;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  width: 300px;
+  background-color: white;
+}
+
+#quit:hover, #startgame:hover, #roll:hover, #rollagain:hover, #pass:hover {
+  background-color: #5EAEE7;
+}
+
+.center{
+  text-align: center;
+}
+
+/*------- typography --------*/
+h1, p{
+  color: #88C2EB;
+}
+
+h1{
+  font-size: 90px;
+  font-family: 'Fredoka One', cursive;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+#startgame{
+  font-size: 25px;
+  font-family: 'Fredoka One', cursive;
+}
+
+#quit, #roll, #rollagain, #pass {
+  font-size: 20px;
+  font-family: 'Fredoka One', cursive;
+}
+
+#quit{
+  color: black;
+}
+
+.headerintructions{
+  font-family: 'Fredoka One', cursive;
+  font-size: 40px;
+  color: black;
+}
+
+#score{
+  font-family: 'Fredoka One', cursive;
+  font-size: 20px;
+  color: black;
+}
+
+.footertext a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
