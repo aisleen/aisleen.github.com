@@ -21,14 +21,20 @@ margin-bottom: 30px;
 #first, #second, #third {
   padding: 2em;
   background-color: pink;
-  margin-right: 1em;
 }
 
 
 /*---------- Typography ----------*/
-h1{
-  font-weight: bold;
-  font-size: 20em;
+.name{
+  font-family: 'Lora', serif;
+  font-size: 60px;
+}
+
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  line-height: 0.5em;
+
 }
 
 a{
@@ -45,11 +51,6 @@ a:hover{
 
 
 /*---------- Responsive Design ----------*/
-@media(min-width:1200px){
-  #content{
-    width: 1200px;
-  }
-}
 
 @media(min-width:800px){
   #content{
