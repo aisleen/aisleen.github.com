@@ -1,0 +1,356 @@
+/*--- Body Layout ---*/
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/*--- Navigation Content ---*/
+.inline {
+  display: inline-block;
+}
+
+.nav {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+  margin-right: 100px;
+}
+
+ul li {
+  float: right;
+  display: inline-block;
+  position: relative;
+  /* List Styling */
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+li a {
+  text-decoration: none;
+  color: #275D39;
+  padding: 15px;
+}
+
+.btn {
+  white-space: nowrap;
+  border-radius: 40px;
+  margin-top: 30px;
+  margin-right: 5px;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  width: 220px;
+  /* Button Styling */
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  background-color: #7AB24F;
+  color: #FFFFFF;
+}
+
+.btn:hover {
+  background-color: #66A337;
+}
+
+.icons {
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.button {
+  margin-top: -5%;
+  margin-left: 10px;
+  border-radius: 40px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 180px;
+  /* Button Styling */
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  background-color: #FFB09E;
+  color: #FFFFFF;
+}
+
+.button:hover {
+  background-color: #F29B88;
+}
+
+/* Logo Location */
+.logo {
+  position: absolute;
+  top: 8px;
+  left: 100px;
+  width: 65px;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+}
+
+/*--- Hero Content ---*/
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  /*---background: linear-gradient(to bottom right, #F6D285 0%, #BBF0F3 100%);---*/
+  background: #F2F5F3;
+  text-align: left;
+}
+
+.hero-left {
+  margin-left: 100px;
+  position: absolute;
+  top: 40%;
+  display: block;
+  padding: 5px;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+/* Title Styling */
+.hero__title {
+  font-family: 'Lora', serif;
+  font-size: 55px;
+  color: #08441C;
+}
+
+.hero__subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  color: #2C6600;
+}
+
+/* Image Location */
+.phone_outline {
+  float: right;
+  margin-right: 60px;
+}
+
+/*--- About Us Content ---*/
+.about {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  /*---background: linear-gradient(to bottom right, #F6D285 0%, #BBF0F3 100%);---*/
+  background: white;
+}
+
+.about-left, .about-right {
+  position: absolute;
+  top: 45%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.about-left {
+  text-align: left;
+  margin-left: 45%;
+  display: block;
+  padding: 100px;
+}
+
+.about-right {
+  margin-right: 50%;
+  margin-left: 100px;
+  padding-top: 30px;
+}
+
+.aboutearth_shadow {
+  padding-left: 95px;
+}
+
+/* Title Styling */
+.about__title {
+  font-family: 'Lora', serif;
+  font-size: 50px;
+  color: #08441C;
+}
+
+.about__subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  color: #2C6600;
+}
+
+/*--- Logo Animation ---*/
+.logo, .aboutearth {
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  color: #FF4081;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  50% {
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+/*--- Three Content ---*/
+#items {
+  align-content: center;
+  display: flex;
+  text-align: center;
+  margin: 80px;
+}
+
+#section1, #section2, #section3 {
+  display: flex;
+  text-align: center;
+  padding: 2%;
+}
+
+/*--- Features Content ---*/
+
+#features {
+  background: #F2F5F3;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#tabs {
+	width: 400px;
+	margin: auto;
+}
+
+#tabs > ul{
+	list-style-type: none;
+}
+
+#tabs > ul > li > a {
+	line-height: 30px;
+	color: #cecece;
+	text-decoration: none;
+}
+
+#tabs .active{
+	color: #333;
+}
+
+#tabs > ul > li > a:hover {
+  color: white;
+}
+
+#tabs > div {
+	transition: opacity 200ms linear;
+}
+
+#tabs .hidden {display:none;}
+#tabs .visible {display:block;}
+#tabs .visuallyhidden {opacity:0;}
+
+#tabs-1, #tabs-2, #tabs-3{
+  margin-left: -70%;
+}
+
+.features-left {
+content-align: left;
+}
+
+
+/*--- Footer Content ---*/
+footer {
+  position: absolute;
+  background-color: #7AB24F;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer h3, footer a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: white;
+}
+
+footer h3 {
+  float: left;
+  padding-left: 100px;
+}
+
+footer a {
+  margin: 16px;
+  text-decoration: none;
+  float: right;
+}
+
+.footerlinks {
+  padding-right: 100px;
+}
+
+/*** code for animation AOS library ***/
+.code {
+  width: 40%;
+  clear: both;
+  height: 200px;
+  background: none;
+  border-radius: 2px;
+  margin: 12vh 0;
+  padding: 10px;
+}
+
+.code pre, .code code {
+  height: 100%;
+  margin: 0;
+}
+
+.code code {
+  padding: 20px 0 0 20px;
+}
+
+.code--small code {
+  padding-top: 75px;
+}
+
+.code--left {
+  float: left;
+}
+
+.code--right {
+  float: right;
+}
+
+.code--wider {
+  width: 60%;
+}
+
+.code--wider code {
+  padding-top: 60px;
+}
+
+/*** Typography ***/
+h2 {
+  font-family: 'Lora', serif;
+  font-size: 24px;
+  color: #1C5331;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #518060;
+}
