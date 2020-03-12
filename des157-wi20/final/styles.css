@@ -223,7 +223,6 @@ li a {
 }
 
 /*--- Features Content ---*/
-
 #features {
   background: #F2F5F3;
   height: 100vh;
@@ -232,44 +231,51 @@ li a {
 }
 
 #tabs {
-	width: 400px;
-	margin: auto;
+  width: 400px;
+  margin: auto;
 }
 
-#tabs > ul{
-	list-style-type: none;
+#tabs>ul {
+  list-style-type: none;
 }
 
-#tabs > ul > li > a {
-	line-height: 30px;
-	color: #cecece;
-	text-decoration: none;
+#tabs>ul>li>a {
+  line-height: 30px;
+  color: #cecece;
+  text-decoration: none;
 }
 
-#tabs .active{
-	color: #333;
+#tabs .active {
+  color: #333;
 }
 
-#tabs > ul > li > a:hover {
+#tabs>ul>li>a:hover {
   color: white;
 }
 
-#tabs > div {
-	transition: opacity 200ms linear;
+#tabs>div {
+  transition: opacity 200ms linear;
 }
 
-#tabs .hidden {display:none;}
-#tabs .visible {display:block;}
-#tabs .visuallyhidden {opacity:0;}
+#tabs .hidden {
+  display: none;
+}
 
-#tabs-1, #tabs-2, #tabs-3{
+#tabs .visible {
+  display: block;
+}
+
+#tabs .visuallyhidden {
+  opacity: 0;
+}
+
+#tabs-1, #tabs-2, #tabs-3 {
   margin-left: -70%;
 }
 
 .features-left {
-content-align: left;
+  content-align: left;
 }
-
 
 /*--- Footer Content ---*/
 footer {
