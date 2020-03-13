@@ -16,7 +16,6 @@ body {
 
 ul {
   list-style: none;
-  margin-right: 100px;
 }
 
 .nav_menu>ul>li {
@@ -134,7 +133,6 @@ ul {
 
 /* Image Location */
 .phone_outline {
-  float: right;
   padding-right: 150px;
 }
 
@@ -173,16 +171,14 @@ ul {
 }
 
 /* Title Styling */
-.about__title {
+.about__title, .about__features {
   font-family: 'Lora', serif;
   font-size: 50px;
   color: #08441C;
+  padding-top: 40px;
 }
 
 .about__features {
-  font-family: 'Lora', serif;
-  font-size: 50px;
-  color: #08441C;
   text-align: center;
 }
 
@@ -221,14 +217,14 @@ ul {
 #items {
   align-content: center;
   display: flex;
-  flex: 1fr 1fr 1fr;
   text-align: center;
-  margin: 80px;
+  margin: 10%;
 }
 
 #section1, #section2, #section3 {
   text-align: center;
   padding: 2%;
+  width: 400px;
 }
 
 /*--- Features Content ---*/
