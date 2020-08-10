@@ -1,0 +1,16 @@
+#typed {
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  color: #151C34;
+  line-height: 65px;
+}
+
+/* Cursor */
+.typed-cursor {
+  display: none;
+}
+
+/* If fade out option is set */
+.typed-fade-out {
+  display: none;
+}
