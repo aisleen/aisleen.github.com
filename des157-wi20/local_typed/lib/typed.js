@@ -408,7 +408,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      if (this.loop) {
 	        this.curLoop++;
 	      } else {
-	        this.typingComplete = true;
+	        this.typingComplete = false;
 	      }
 	    }
 
