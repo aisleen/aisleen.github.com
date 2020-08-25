@@ -846,7 +846,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	   * @property {number} loopCount amount of loops
 	   */
 	  loop: false,
-	  loopCount: Infinity,
+	  loopCount: 0,
 
 	  /**
 	   * @property {boolean} showCursor show cursor
